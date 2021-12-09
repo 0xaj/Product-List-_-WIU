@@ -1,0 +1,62 @@
+CREATE DATABASE  IF NOT EXISTS `db`;
+USE `db`;
+
+DROP TABLE IF EXISTS `product`;
+SET GLOBAL FOREIGN_KEY_CHECKS=0;
+
+
+--
+-- Data for table `product`
+--
+
+CREATE TABLE `product` (
+  `pid` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(45) DEFAULT NULL,
+  `description` varchar(100) DEFAULT NULL,
+  `image` varchar(1000) DEFAULT NULL,
+  `price` int not null,
+   PRIMARY KEY (`pid`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+--
+-- Data for table `comment`
+--
+
+CREATE TABLE `comment` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `message` varchar(200) DEFAULT NULL,
+  `pid` int DEFAULT NULL,
+   PRIMARY KEY (`id`),
+   FOREIGN KEY (id) REFERENCES product(pid)
+
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+
+
+
+
+
+INSERT INTO `product` VALUES 
+	(1,'Apple Charger','Apple 20W USB-C Power Adapter (for iPhone, iPad & AirPods)','1',1500),
+	(2,'Java Book','Java: The Complete Reference, Seventh Edition (Old Edition) Paperback – 1 July 2017','2',300),
+	(3,'Pen','Balll point pen','3',299),
+	(4,'Galaxy Buds2','Three microphones and a built-in voice pickup unit help you make clearer calls, ','4',1600),
+	(5,'Phone Cover','The best and latest styles for your mobile device','5',2000),
+	(6,'Bottle','Water bottle ','6',1500),
+	(7,'Cap','Stylish Cap ','7',900),
+	(8,'Mask','Mask Protection ','8',50),
+	(9,'Watch','Water bottle ','9',20000),
+	(10,'Helmet','Water bottle ','6',9000);
+
+
+
+    
+
+    
+
+    
+INSERT INTO `comment` VALUES 
+	(4,'WoW!!!!!!!!!',1),
+	(5,'Great',2),
+	(6,'Nice',1);
+
+
