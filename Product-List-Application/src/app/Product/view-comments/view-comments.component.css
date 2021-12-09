@@ -1,0 +1,85 @@
+.main-title{
+    font-size: 48px;
+    font-weight:bolder;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+}
+.image-comp{
+    border-radius: 30px;
+    background-size: cover;
+}
+
+.left-sec{
+    box-sizing: border-box;
+    width: 250px;
+    height: 500px;
+}
+
+.parent-comp{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+
+.heading{
+    font-size: 36px;
+    font-weight: 800;
+
+}
+
+.subtitle{
+    font-size: 18px;
+}
+.col-comment{
+    /* text-align: center; */
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.cmt-head{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.text-box{
+    margin-bottom: 20px;
+}
+.cmt-box{
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+}
+.main-comp{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.btn-cmt{
+    padding: 8px 32px;
+    background: #FF9300;
+    color: white;
+    font-size: 16px;
+
+}
+.btn-del{
+    padding: 8px 16px;
+    background: #E02401;
+    color: white;
+    font-size: 14px;
+
+}
+
+.mat-header-cell, .mat-cell{
+    border: none;
+    padding-right: 200px;
+}
+th.mat-header-cell, td.mat-cell{
+    padding-left: 0 !important;
+
+}

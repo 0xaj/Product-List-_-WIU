@@ -1,0 +1,55 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  .tb-main{
+    padding: 50px;
+  }
+  td, th {
+    width: 25%;
+  }
+.tb-header{
+    background: antiquewhite;
+    border-radius: 10px;
+  } 
+  .mat-header-row{
+    border-radius: 10px;
+  }
+  .search{
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  .search-box{
+    padding: 10px;
+    border-radius: 8px;
+  }
+  th.mat-header-cell{
+    border: none;
+  }
+  .mat-cell{
+    border: none;
+  }
+  .pgntn{
+    margin-top: 20px;
+  }
+  .btn-view{
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    
+    
+  }
+  .btn-parent{
+    display: flex;
+    align-items: center;
+  }
+  td.mat-cell{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    width: 0;
+  }
